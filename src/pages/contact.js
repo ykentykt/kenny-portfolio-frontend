@@ -15,7 +15,7 @@ const ContactForm = () => {
   const sendEmail = event => {
     event.preventDefault();
     axios
-      .post('https://kenny-portfolio-backend.onrender.com', {...state})
+      .post('https://kenny-portfolio-backend.onrender.com/send', {...state})
       .then((response) => {
         setResult(response.data);
         setState({
