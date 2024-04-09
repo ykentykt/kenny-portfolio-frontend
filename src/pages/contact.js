@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import './Contact.css';
 import axios from 'axios';
 
 const ContactForm = () => {
@@ -14,7 +15,7 @@ const ContactForm = () => {
   const sendEmail = event => {
     event.preventDefault();
     axios
-      .post('http://localhost:3000/send', {...state})
+      .post('https://kenny-portfolio-backend.onrender.com', {...state})
       .then((response) => {
         setResult(response.data);
         setState({
