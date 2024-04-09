@@ -1,0 +1,82 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    background-image: url(../images/starry_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.header-text h1 span {
+    color: #3ec8fa;
+}
+
+.header-text p {
+    margin-top: 20px;
+}
+.header-text ul li{
+    padding-left: 20px;
+    list-style-position: inside;
+    color: #9ca5ea;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
